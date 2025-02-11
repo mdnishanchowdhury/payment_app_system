@@ -20,46 +20,58 @@
             <div class="artboard artboard-demo phone-1 ">
                 <div class="box-border bg-white w-64 h-15 rounded-md  mb-5 ...">
                     <p id="balance" class="text-center pt-4">500</p>
-                  </div>
-               <div id="display1" class="space-y-1">
-                 <!-- login system starting -->
-                 <label class="input input-bordered flex items-center  btn-wide">
-                    <input id="amount-section" type="text" class="grow" placeholder="Amount" />
-                </label>
-                <label class="input input-bordered flex items-center  btn-wide">
-                    <input id="pin-number" type="password" class="grow" placeholder="Pin Number" />
-                </label> <!-- login system ending -->
-               </div>
+                </div>
+                <div id="display1" class="space-y-1">
+                    <!-- login system starting -->
+                    <label class="input input-bordered flex items-center  btn-wide">
+                        <input id="amount-section" type="text" class="grow" placeholder="Amount" />
+                    </label>
+                    <label class="input input-bordered flex items-center  btn-wide">
+                        <input id="pin-number" type="password" class="grow" placeholder="Pin Number" />
+                    </label> <!-- login system ending -->
+                </div>
 
-               <!-- cash out display starting -->
-              
-               <div id="display2" class="space-y-1 hidden ">
-                 <!-- login system starting -->
-                 <label class="input input-bordered flex items-center  btn-wide">
-                    <input id="amount-section2" type="text" class="grow" placeholder="Cash-Out Amount" />
-                </label>
-                <label class="input input-bordered flex items-center  btn-wide">
-                    <input id="pin-number2" type="password" class="grow" placeholder="Pin Number" />
-                </label> <!-- login system ending -->
-               </div>
-               <!-- cash out display ending -->
+                <!-- cash out display starting -->
+
+                <div id="display2" class="space-y-1 hidden ">
+                    <!-- login system starting -->
+                    <label class="input input-bordered flex items-center  btn-wide">
+                        <input id="amount-section2" type="text" class="grow" placeholder="Cash-Out Amount" />
+                    </label>
+                    <label class="input input-bordered flex items-center  btn-wide">
+                        <input id="pin-number2" type="password" class="grow" placeholder="Pin Number" />
+                    </label> <!-- login system ending -->
+                </div>
+                <!-- cash out display ending -->
+                <!-- Transaction history starting -->
+               
+
+                <div  id="display-section-item" class="h-30 overflow-x-auto hidden">
+                    <table class="table table-pin-rows">
+                        <p id="display-section">Transaction History</p>
+                        </table>
+                  </div>
+
+                <!-- ending -->
                 <div class="flex gap-1 mt-2">
                     <button id="Cash-In" class="btn w-31">Cash-In</button>
                     <button id="cash-out" class="btn w-31">Cash-Out</button>
                 </div>
-
+                <div>
+                    <button id="transaction-history-btm" class="btn btn-wide mt-1">Transaction History</button>
+                </div>
             </div>
         </div>
     </div>
     <!-- daisyUl tailwind mobile version Ending  -->
     <!-- javascript link -->
-     <script>
-      
-     </script>
-      <script src="js/home.js"></script>
-     <script src="js/login.js"></script>
-    
-    
+    <script>
+        
+    </script>
+    <script src="js/home.js"></script>
+    <script src="js/login.js"></script>
+
+
     <script src="js/utilities.js"></script>
 </body>
 

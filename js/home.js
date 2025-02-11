@@ -5,13 +5,22 @@ document.getElementById('Cash-In').addEventListener('click', function () {
     const pinNumber = getInputPhone_PinNUmber('pin-number');
     const balance = document.getElementById('balance').innerText;
     const balanceSection = parseFloat(balance);
-   
-   
-    if(pinNumber === 1234){
+
+
+    if (pinNumber === 1234) {
         const total = amountSection + balanceSection;
-        document.getElementById('balance').innerText=total;
+        document.getElementById('balance').innerText = total;
+
+        // display starting
+        
+        const p =document.createElement('p');
+        p.innerText =`Cash-In: ${amountSection} tk. balance: ${total}`;
+        // console.log(p);
+        document.getElementById('display-section').appendChild(p);
+
+        // ending display
     }
-    else{
+    else {
         alert('wrong information');
     }
 })
@@ -27,15 +36,28 @@ document.getElementById('cash-out').addEventListener('click', function () {
     const pinNumber = getInputPhone_PinNUmber('pin-number');
     const balance = document.getElementById('balance').innerText;
     const balanceSection = parseFloat(balance);
-   
-   
-    if(pinNumber === 1234){
+
+
+    if (pinNumber === 1234) {
         const total = amountSection - balanceSection;
         const totalPositive = total * -1;
-        document.getElementById('balance').innerText= totalPositive;
+        document.getElementById('balance').innerText = totalPositive;
+
+         // display starting
+        
+         const p =document.createElement('p');
+         p.innerText =`Cash-Out tk: ${amountSection} tk. balance: ${totalPositive}`;
+         console.log(p);
+         document.getElementById('display-section').appendChild(p);
+ 
+         // ending display
     }
-    else{
+    else {
         alert('wrong information');
     }
 
 })
+// Transaction history
+document.getElementById('transaction-history-btm').addEventListener('click', function () {
+    getDisplay('display-section-item');
+});
